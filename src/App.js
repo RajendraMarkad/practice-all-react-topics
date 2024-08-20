@@ -1,5 +1,6 @@
 import './App.css';
-import {ParentComponent, ParentUser, NestedProvider, ToggleParent} from './hooks/UseContextHook'
+import {ParentComponent, ParentUser, NestedProvider, ToggleParent} from './hooks/UseContextHook';
+import { Counter } from './hooks/useReducer';
 
 function App() {
   return <>
@@ -7,6 +8,7 @@ function App() {
   <ParentUser />
   <NestedProvider />
   <ToggleParent />
+  <Counter />
   </>
 }
 
