@@ -1,11 +1,13 @@
-import React, { useReducer } from 'react';
+import React, {useReducer } from "react";
+
+// Increment/decrement using useReducer hook
 
 // Define the reducer function
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'INCREMENT':
+    case "INCREMENT":
       return { count: state.count + 1 };
-    case 'DECREMENT':
+    case "DECREMENT":
       return { count: state.count - 1 };
     default:
       throw new Error();
@@ -15,8 +17,8 @@ const reducer = (state, action) => {
 // Define the component
 const Counter = () => {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
-  const increment= () => dispatch({ type: 'INCREMENT' })
-    const decrement = () => dispatch({ type: 'DECREMENT' })
+  const increment = () => dispatch({ type: "INCREMENT" });
+  const decrement = () => dispatch({ type: "DECREMENT" });
 
   return (
     <div>
@@ -27,4 +29,4 @@ const Counter = () => {
   );
 };
 
-export  {Counter};
+export { Counter };

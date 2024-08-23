@@ -55,7 +55,7 @@ const ShowToggle =()=>{
 
     const {bgColor, toggleButton} = useContext(ToggleContext);
 
-    return <div style={{backgroundColor: bgColor==='dark' ? 'black':'white', color: bgColor=='dark' ? 'white':'black'}} >
+    return <div style={{backgroundColor: bgColor==='dark' ? 'black':'white', color: bgColor==='dark' ? 'white':'black'}} >
         <button onClick={toggleButton}>Change Color</button>
         <p>useContext allows you to access the value provided by a React Context directly in a component without needing to pass props. Context is designed to share data like themes, user information, or other data that should be accessible globally throughout a component tree.</p>
     </div>
